@@ -1,0 +1,93 @@
+body{
+    width:100%;
+    height:100vmin;
+    top: 0;
+    background-color:#333333;
+  }
+  .header{
+    background-color:#333333;
+    height:20vmin;
+    width:100%;
+    display:flex;
+    align-items:center;
+    position: sticky;
+    top: 0;
+    z-index:1;
+  }
+  .logo{
+    color:white;
+    letter-spacing:10px;
+    font-family:helvetica;
+    transform:translateX(25%);
+  }
+  .section1{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  img{
+    width:100%;
+    height:80vmin;
+    object-fit: cover;
+  }
+  .titre{
+    width:25%;
+    height:20vmin;
+    background-color:black;
+    opacity:0.5;
+    transform:translateY(-200%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .titre p{
+    color:white;
+    letter-spacing:10px;
+    font-family:helvetica;
+    font-size:175%;
+  }
+  .introduction{
+    display:flex;
+    justify-content:center;
+    color:white;
+    letter-spacing:5px;
+    font-family:helvetica;
+    font-size:20px;
+    padding:20px;
+    color:#0976A5;
+    
+  }
+  #fondatrice{
+    font-size:15px;
+    padding:20px;
+    color:white;
+  }
+  .section2{
+    margin-bottom:5%;
+  }
+  .section3{
+    font-size:20px;
+    color:white;
+    height:30vmin;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#0976A5;
+  }
+  .date{
+    font-size:25px;
+    padding-right:30px;
+  }
+  .sectionSVG img{
+    width:25vmin;
+    height:80%;
+    transform:translateX(-50%);
+  }
+  .sectionSVG{
+    display:flex;
+    justify-content:center;
+  }
+  #svg2{
+    width:20%;
+  }
+  
