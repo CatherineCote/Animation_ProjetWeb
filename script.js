@@ -1,6 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const section2 = document.querySelectorAll('.section2');
+//ANIMATION DE LA SECTION 2 ..................................................
+
+const section2 = document.querySelector('.section2');
 gsap.timeline({
   scrollTrigger: {
     scrub: 1,
@@ -16,7 +18,10 @@ gsap.timeline({
   y:100
 })
 
-const section3 = document.querySelectorAll('.section3');
+
+//ANIMATION SECTION 3........................................................
+
+const section3 = document.querySelector('.section3');
 gsap.timeline({
   scrollTrigger: {
     scrub: 1,
@@ -44,20 +49,122 @@ var tl = gsap.timeline({
     end: 'bottom 100%',
     trigger: section3,
   }
+  
 })
 
-//Créer la fonction personnalisé
-tl.add(CreateLineSVG(svg2));
+.to('.sectionSVG',{
+  y:-150,
+  delay: 0.9
+})
+.from('.megaphone',{
+    rotation:50, 
+    delay: 0.9
+  })
+.to('.megaphone',{
+    rotation:-5, 
+    transformOrigin:"50px 50px",
+    ease: Back,
+    delay: 0.9
+  })
 
-//this function creates a single tween that animates the stroke of an svg
-function CreateLineSVG(svg) { 
+  //ANIMATION INFINI DE L'ECHO...............................
+  const echo = document.querySelectorAll('.echo');
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: echo,
+    }
+  })
+  .to('.echo',{
+    scale:1.2,
+    repeat: -1,
+    yoyo: true,
+    delay: 0.9
+  })
+
+  
+  
+//ANIMATION RECTANGLE............................................................
+
+//Créer la fonction personnalisé
+tl.add(rectangle(svg2));
+
+//Cette fonction crée un tween qui va animer la stroke du SVG
+function rectangle(svg) { 
    var trajet = {length:0, pathLength:svg.getTotalLength()}; 
-   var tween = TweenLite.to(trajet, 2, {length:trajet.pathLength, onUpdate:drawLine, onUpdateParams:[trajet, svg], immediateRender:true});
-   return tween;
+   var animation = gsap.to(trajet, 2, {
+       length:trajet.pathLength,
+        onUpdate:drawLine, 
+        onUpdateParams:[trajet, svg], 
+        immediateRender:true
+    });
+   return animation;
 };
 
 
- //update stroke   
+ //Update de la stroke  
  function drawLine(obj, svg) {
   svg.style.strokeDasharray = [obj.length, obj.pathLength].join(' ');
  };
+
+
+ //ANIMATION SECTION 4........................................................
+
+const section4 = document.querySelector('.section4');
+gsap.timeline({
+  scrollTrigger: {
+    scrub: 1,
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 75%',
+    trigger: section4,
+  }
+})
+
+.from('.maison',{
+    y: '100%',
+    stagger: 0.2
+})
+.from('.sol',{
+    scaleX: 0
+
+})
+//ANIMATION NUAGE INFINI.............................................
+const nuage = document.querySelectorAll('.nuage');
+gsap.timeline({
+  scrollTrigger: {
+    trigger: nuage,
+  }
+})
+.to('.nuage',{
+  x: '2600%',
+  duration:50,
+  delay:1,
+  repeat: -1,
+})
+const nuage02 = document.querySelectorAll('.nuage02');
+gsap.timeline({
+  scrollTrigger: {
+    trigger: nuage02,
+  }
+})
+.to('.nuage02',{
+  x: '2600%',
+  duration:60,
+  repeat: -1,
+})
+const nuage03 = document.querySelectorAll('.nuage03');
+gsap.timeline({
+  scrollTrigger: {
+    trigger: nuage03,
+  }
+})
+.to('.nuage03',{
+  x: '-1800%',
+  duration:90,
+  repeat: -1,
+})
+
+
+ 
+
+ 

@@ -78,16 +78,75 @@ body{
     font-size:25px;
     padding-right:30px;
   }
-  .sectionSVG img{
-    width:25vmin;
-    height:80%;
-    transform:translateX(-50%);
-  }
+  
   .sectionSVG{
     display:flex;
     justify-content:center;
+    position:absolute;
   }
-  #svg2{
-    width:20%;
-  }
+  
+ #megaphone{
+     width: 80px;
+     height:100px;
+     transform:translateX(-300%) translateY(70%);
+     
+
+ }
+ #echo{
+    width: 55px;
+    height:60px;
+    transform:translateX(-400%) translateY(125%);
+    
+ }
+ .nuage{
+    width: 50px;
+    height:25px;
+    transform:translateY(-900%) translateX(-200%);
+ }
+ .nuage02{
+    width: 50px;
+    height:25px;
+    transform:translateY(-700%) translateX(-200%);
+ }
+ .nuage03{
+    width: 50px;
+    height:25px;
+    transform:translateY(-600%) translateX(2000%);
+ }
+ .no01{
+    width: 80px;
+    height:100px;
+    transform:translateY(10%);
+ }
+ .no02{
+    width: 80px;
+    height:100px;
+    transform:translateY(10%);
+ }
+ .no03{
+    width: 80px;
+    height:100px;
+    transform:translateY(10%);
+ }
+ .no04{
+    width: 200px;
+    height:170px;
+    transform:translateY(8%);
+ }
+ .arbre{
+    width: 100px;
+    height:150px;
+    transform:translateY(10%);
+ }
+ .section4{
+     margin-top:5%;
+     margin-bottom:30%;
+ }
+
+ 
+ 
+
+ 
+
+  
   
