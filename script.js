@@ -25,7 +25,7 @@ const section3 = document.querySelector('.section3');
 gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    markers: false,
     start: 'top 100%',
     end: 'bottom 50%',
     trigger: section3,
@@ -36,6 +36,8 @@ gsap.timeline({
   opacity:0,
   y:100
 })
+
+
 
 
 //Créer une variable pour le SVG 
@@ -77,8 +79,7 @@ var tl = gsap.timeline({
   .to('.echo',{
     scale:1.2,
     repeat: -1,
-    yoyo: true,
-    delay: 0.9
+    yoyo: true
   })
 
   
@@ -113,7 +114,7 @@ const section4 = document.querySelector('.section4');
 gsap.timeline({
   scrollTrigger: {
     scrub: 1,
-    markers: true,
+    markers: false,
     start: 'top 75%',
     end: 'bottom 75%',
     trigger: section4,
@@ -136,7 +137,7 @@ gsap.timeline({
   }
 })
 .to('.nuage',{
-  x: '2600%',
+  x: '2650%',
   duration:50,
   delay:1,
   repeat: -1,
@@ -148,7 +149,7 @@ gsap.timeline({
   }
 })
 .to('.nuage02',{
-  x: '2600%',
+  x: '2650%',
   duration:60,
   repeat: -1,
 })
