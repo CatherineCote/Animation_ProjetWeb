@@ -116,22 +116,22 @@ body{
  }
  .no01{
     width: 80px;
-    height:100px;
+    height:110px;
     transform:translateY(10%);
  }
  .no02{
     width: 80px;
-    height:100px;
+    height:110px;
     transform:translateY(10%);
  }
  .no03{
     width: 80px;
-    height:100px;
+    height:110px;
     transform:translateY(10%);
  }
  .no04{
-    width: 200px;
-    height:170px;
+    width: 205px;
+    height:180px;
     transform:translateY(8%);
  }
  .arbre{
@@ -142,6 +142,7 @@ body{
  .section4{
      margin-top:5%;
      margin-bottom:30%;
+     
  }
 
  
@@ -176,13 +177,13 @@ body{
   overflow: hidden;
 }
 .nuage03{
-  transform:translateY(-500%) translateX(1000%);
+  transform:translateY(-600%) translateX(1000%);
 }
 .nuage02{
-  transform:translateY(-400%) translateX(-100%);
+  transform:translateY(-500%) translateX(-100%);
 }
 .nuage{
-  transform:translateY(-475%) translateX(-100%);
+  transform:translateY(-375%) translateX(-100%);
 }
 }
 
@@ -233,10 +234,10 @@ body{
   overflow: hidden;
 }
 .nuage03{
-  transform:translateY(-500%) translateX(1000%);
+  transform:translateY(-600%) translateX(1000%);
 }
 .nuage02{
-  transform:translateY(-400%) translateX(-100%);
+  transform:translateY(-500%) translateX(-100%);
 }
 
 
